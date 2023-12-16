@@ -59,8 +59,7 @@ public class TrailSelectorMenu {
                 .addLore("&6Bal klikk | Vásárlás")
                 .addLore("&6Jobb klikk | Eladás")
                 .addLore("")
-                .addLore(!CTrails.getInstance().getToken().hasTrail(player, trails) ? "&6Vásárlási ár &8» &a" + trails.getPrice() :
-                        CTrails.getDatabaseManager().isActiveTrail(player, trails) ? "&aKiválasztva" : "&aKattints a kiválasztáshoz!")
+                .addLore(!CTrails.getInstance().getToken().hasTrail(player, trails) ? "&6Vásárlási ár &8» &a" + trails.getPrice() : CTrails.getDatabaseManager().isActiveTrail(player, trails) ? "&aKiválasztva" : "&aKattints a kiválasztáshoz!")
                 .addLore("&6Eladási ár &8» &a" + trails.getSellPrice())
                 .finish());
     }
